@@ -1,0 +1,12 @@
+syntax = "proto3";
+package visca.visca;
+
+import "gogoproto/gogo.proto";
+import "visca/visca/params.proto";
+
+option go_package = "visca/x/visca/types";
+
+// GenesisState defines the visca module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package visca.visca;
+
+option go_package = "visca/x/visca/types";
+
+// Msg defines the Msg service.
+service Msg {}
